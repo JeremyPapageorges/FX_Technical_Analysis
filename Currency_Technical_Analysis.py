@@ -90,8 +90,14 @@ dataset_print.set_index('Date', inplace=True)
 
 
 ###################################################
+# Build Tabs
+###################################################
+tab_analysis, tab_forecasting = st.tabs(['Technical Analysis', 'Forecasting'])
+
+###################################################
 # Show results
 ###################################################
+
 
 st.write("OHLC Stock data for ", ticker, " given ", frequency_pick ,' frequency')
 st.dataframe(dataset_print)
